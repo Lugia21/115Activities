@@ -4,4 +4,6 @@
     <string name="press">Press</string>
     <string name="text1">TextView</string>
     <string name="login">LOGIN</string>
+    <string name="password">Password:</string>
+    <string name="username">UserName:</string>
 </resources>

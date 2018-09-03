@@ -20,34 +20,60 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/loginBox"
+        <TableLayout
+            android:id="@+id/table1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:textColor="@android:color/black"
-            android:textSize="36sp"
-            android:typeface="normal"
-            app:fontFamily="sans-serif-smallcaps" />
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/uName"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:text="UserName:"
-            android:textColor="@android:color/holo_red_light"
-            android:textSize="24sp"
-            android:typeface="normal"
-            app:fontFamily="sans-serif-smallcaps" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/passwd"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:text="Password:"
-            android:textColor="@android:color/holo_red_light"
-            android:textSize="24sp"
-            android:typeface="normal"
-            app:fontFamily="sans-serif-smallcaps" />
+                <TextView
+                    android:id="@+id/loginBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:textColor="@android:color/black"
+                    android:textSize="36sp"
+                    android:typeface="normal"
+                    app:fontFamily="sans-serif-smallcaps" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/uName"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:text="@string/username"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="24sp"
+                    android:typeface="normal"
+                    app:fontFamily="sans-serif-smallcaps" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="101dp"
+                android:layout_height="74dp">
+
+                <TextView
+                    android:id="@+id/passwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:text="@string/password"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="24sp"
+                    android:typeface="normal"
+                    app:fontFamily="sans-serif-smallcaps" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
